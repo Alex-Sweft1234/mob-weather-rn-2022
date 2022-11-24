@@ -1,13 +1,14 @@
 import React from 'react';
-import { StatusBar, StyleSheet, View } from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import { ILayout } from '../../types';
 
 export const Layout: React.FC<ILayout> = ({ children }): JSX.Element => {
   return (
-    <View style={styles.container}>
-      <StatusBar backgroundColor="#034f84" />
+    <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.container}>
+      <StatusBar backgroundColor="#192f6a" />
       {children}
-    </View>
+    </LinearGradient>
   );
 };
 
@@ -17,6 +18,5 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#92a8d1',
   },
 });

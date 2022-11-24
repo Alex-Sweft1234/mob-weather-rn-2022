@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const CustomHeader: React.FC = (): JSX.Element => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.touch} onPress={() => console.log('click')}>
-        <Text style={styles.text}>Weather</Text>
-      </TouchableOpacity>
+      <Icon name="partly-sunny" color="#ffffff" size={24} />
+      <Text style={styles.text}>Weather</Text>
     </View>
   );
 };
@@ -19,15 +19,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#034f84',
+    backgroundColor: '#192f6a',
     height: 70,
-  },
-  touch: {
-    padding: 10,
   },
   text: {
     fontSize: 20,
     color: '#ffffff',
     fontWeight: 'bold',
+    marginTop: 3,
+    marginLeft: 10,
   },
 });

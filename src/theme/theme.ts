@@ -1,4 +1,4 @@
-import { DefaultTheme } from '@react-navigation/native'
+import { DefaultTheme } from '@react-navigation/native';
 
 export const theme = {
   ...DefaultTheme,
@@ -6,4 +6,4 @@ export const theme = {
     ...DefaultTheme.colors,
     primary: '#92a8d1',
   },
-}
+};
