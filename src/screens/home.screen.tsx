@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Layout } from '../components';
-// import { useReduxActions } from '../hooks';
+import { useReduxActions } from '../hooks';
 
 export const HomeScreen: React.FC = (): JSX.Element => {
-  // const { setLocation } = useReduxActions();
+  const { setLocation } = useReduxActions();
 
-  // useEffect(() => setLocation('location'), []);
+  useEffect(() => setLocation('location'), []);
 
   return (
     <Layout>
