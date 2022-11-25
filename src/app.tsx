@@ -1,13 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
 import { NavigationRoot } from './navigation';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 export const App: React.FC = (): JSX.Element => {
   return (
-    <SafeAreaView style={styles.container}>
+    <Provider store={store}>
       <NavigationRoot />
-    </SafeAreaView>
+    </Provider>
   );
 };
-
-const styles = StyleSheet.create({ container: { flex: 1 } });

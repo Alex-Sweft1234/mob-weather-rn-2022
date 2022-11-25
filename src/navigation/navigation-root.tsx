@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { theme } from '../theme';
 import { HeaderRoot, HeaderSettings } from './header';
 import { SCREENS } from '../types';
-import { SettingsScreen } from '../screens/settings';
+import { SettingsScreen } from '../screens/settings.screen';
 
 const Stack = createNativeStackNavigator();
 

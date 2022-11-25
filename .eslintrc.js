@@ -11,6 +11,7 @@ module.exports = {
         'no-shadow': 'off',
         'no-undef': 'off',
         'import/no-cycle': 'off',
+        'react-hooks/exhaustive-deps': 'off',
         'prettier/prettier': [
           'error',
           {
